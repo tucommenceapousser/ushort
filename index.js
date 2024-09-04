@@ -65,89 +65,100 @@ app.get('/', async (req, res) => {
         <!DOCTYPE html>
         <html lang="fr">
         <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Raccourcisseur d'URL - WebShell trhacknon</title>
-            <style>
-                body {
-                    background-color: #000000; /* Noir */
-                    color: #FF4500; /* Orange fluo */
-                    font-family: Arial, sans-serif;
-                }
-                h1 {
-                    color: #1E90FF; /* Bleu fluo */
-                }
-                .container {
-                    width: 80%;
-                    margin: auto;
-                    padding: 20px;
-                    background-color: #4B0082; /* Violet foncé */
-                    border-radius: 10px;
-                    box-shadow: 0px 0px 10px #FF4500;
-                    text-align: center;
-                }
-                input[type="text"], input[type="password"], textarea {
-                    width: 100%;
-                    padding: 10px;
-                    margin: 10px 0;
-                    background-color: #000000;
-                    color: #FF4500;
-                    border: 1px solid #FF4500;
-                    border-radius: 5px;
-                }
-                input[type="submit"], button {
-                    padding: 10px 20px;
-                    background-color: #FF4500;
-                    color: #000000;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    margin-right: 5px;
-                    margin-bottom: 10px;
-                }
-                input[type="submit"]:hover, button:hover {
-                    background-color: #1E90FF; /* Bleu fluo */
-                    color: #FFFFFF;
-                }
-                .short-url {
-                    background-color: #000000;
-                    color: #1E90FF;
-                    padding: 10px;
-                    border: 1px solid #1E90FF;
-                    border-radius: 5px;
-                    margin-top: 20px;
-                    display: inline-block;
-                    text-decoration: none;
-                }
-                .url-list {
-                    margin-top: 20px;
-                }
-                .url-list h2 {
-                    color: #1E90FF; /* Bleu fluo */
-                }
-                .url-list a {
-                    display: block;
-                    color: #1E90FF;
-                    text-decoration: none;
-                    margin: 5px 0;
-                }
-                .url-list a:hover {
-                    text-decoration: underline;
-                }
-                .delete-button {
-                    background-color: #FF4500;
-                    color: #000000;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    padding: 5px 10px;
-                }
-                .delete-button:hover {
-                    background-color: #1E90FF;
-                    color: #FFFFFF;
-                }
-            </style>
-        </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccourcisseur d'URL - WebShell trhacknon</title>
+    <style>
+        body {
+            background-color: #000000; /* Noir */
+            color: #00FF00; /* Vert fluo */
+            font-family: 'Courier New', Courier, monospace; /* Police monospace pour un effet hacker */
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #00FFFF; /* Cyan fluo */
+            margin: 0;
+            padding: 20px;
+            border-bottom: 2px solid #00FF00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #222222; /* Gris très foncé */
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #00FF00;
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="password"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #000000;
+            color: #00FF00; /* Vert fluo */
+            border: 1px solid #00FF00;
+            border-radius: 5px;
+        }
+        input[type="submit"], button {
+            padding: 10px 20px;
+            background-color: #00FF00; /* Vert fluo */
+            color: #000000; /* Noir */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #00FFFF; /* Cyan fluo */
+            color: #000000;
+        }
+        .short-url {
+            background-color: #000000;
+            color: #00FFFF; /* Cyan fluo */
+            padding: 10px;
+            border: 1px solid #00FFFF;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .url-list {
+            margin-top: 20px;
+        }
+        .url-list h2 {
+            color: #00FFFF; /* Cyan fluo */
+        }
+        .url-list a {
+            display: block;
+            color: #00FF00; /* Vert fluo */
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .url-list a:hover {
+            text-decoration: underline;
+        }
+        .delete-button {
+            background-color: #FF0000; /* Rouge fluo */
+            color: #000000; /* Noir */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        .delete-button:hover {
+            background-color: #00FFFF; /* Cyan fluo */
+            color: #000000;
+        }
+    </style>
+</head>
+       
         <body>
             <div class="container">
                 <h1>Raccourcisseur d'URL - WebShell trhacknon</h1>
