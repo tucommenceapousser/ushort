@@ -199,8 +199,9 @@ app.get('/', async (req, res) => {
 });
 
 // Endpoint pour gérer les requêtes POST
+// Endpoint pour gérer les requêtes POST
 app.post('/', async (req, res) => {
-    const originalURL = validator.escape(req.body.url); // Validation et échappement de l'URL
+    const originalURL = req.body.url; // Ne pas échapper l'URL ici
     let shortURL = '';
 
     if (originalURL) {
