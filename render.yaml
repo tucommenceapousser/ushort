@@ -1,0 +1,11 @@
+# Exported from Render on 2024-09-04T23:35:29Z
+services:
+- type: web
+  name: trkn-ushort
+  runtime: node
+  repo: https://github.com/tucommenceapousser/ushort
+  plan: free
+  region: oregon
+  buildCommand: npm install
+  startCommand: node index.js
+version: "1"
