@@ -181,7 +181,7 @@ app.get('/', async (req, res) => {
                         ${shortenedURLs.map(({ code, url }) => `
                             <div>
                                 <a href="/?c=${code}" target="_blank">
-                                    https://trkushort.glitch.me/?c=${code} (${url})
+                                    https://trkn-ushort.onrender.com/?c=${code} (${url})
                                 </a>
                                 <form method="post" action="/delete" style="display: inline;">
                                     <input type="hidden" name="code" value="${code}">
@@ -217,7 +217,7 @@ app.post('/', async (req, res) => {
         }
 
         // Construire l'URL raccourcie
-        shortURL = `https://trkushort.glitch.me/?c=${shortCode}`;
+        shortURL = `https://trkn-ushort.onrender.com/?c=${shortCode}`;
     }
 
     // Redirection vers la page d'accueil avec l'URL raccourcie
