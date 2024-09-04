@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs/promises');
+const fs = require('fs').promises
 const path = require('path');
 
 const app = express();
@@ -165,7 +165,7 @@ app.get('/', async (req, res) => {
                         ${shortenedURLs.map(({ code, url }) => `
                             <div>
                                 <a href="/?c=${code}" target="_blank">
-                                    https://946135dd-a1e1-48d0-b44f-be01cb1552bd-00-8563n18uzwix.pike.replit.dev/?c=${code} (${url})
+                                    https://trkushort.glitch.me/?c=${code} (${url})
                                 </a>
                                 <form method="post" action="/delete" style="display: inline;">
                                     <input type="hidden" name="code" value="${code}">
@@ -200,7 +200,7 @@ app.post('/', async (req, res) => {
         }
 
         // Construire l'URL raccourcie
-        shortURL = `https://946135dd-a1e1-48d0-b44f-be01cb1552bd-00-8563n18uzwix.pike.replit.dev/?c=${shortCode}`;
+        shortURL = `https://trkushort.glitch.me/?c=${shortCode}`;
     }
 
     // Redirection vers la page d'accueil avec l'URL raccourcie
