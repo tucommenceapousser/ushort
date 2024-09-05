@@ -1,6 +1,6 @@
 m# 🏹 Welcome to **Ushort** - The Ultimate URL Shortener! 🔗✨
 
-### **Live Demo** 🌍: [ushort.trkn.online](https://trkn-ushort.onrender.com)
+### **Live Demo** 🌍: [trkn-ushort.onrender.com](https://trkn-ushort.onrender.com)
 
 ### **GitHub Repo** 📚: [GitHub: ushort](https://github.com/tucommenceapousser/ushort)
 
@@ -17,7 +17,7 @@ Ushort is a super-fast, simple, and powerful URL shortener to help you transform
 - 🔒 **Secure** – Set up your own `.env` with personalized credentials for ultimate privacy! 
 - ✨ **Fast** – Lightning-speed URL shortening in a few clicks.
 - ⚙️ **Customizable** – Easily configure your URL base and passwords.
-- 🔗 **Live demo available** at [ushort.trkn.online](https://trkn-ushort.onrender.com).
+- 🔗 **Live demo available** at [trkn-ushort.onrender.com](https://trkn-ushort.onrender.com).
 
 ---
 
@@ -54,7 +54,7 @@ Wanna deploy your own version? It’s a breeze! 🌀
   ```
   
   - `URL_BASE`: Set this to the base URL you want for your shortened links.
-  - `PASSWORD`: This is the password you'll use to manage your app securely.
+  - `PASSWORD`: This is the password you'll use to manage your app securely (argon2id).
   
 </details>
 
@@ -88,7 +88,7 @@ Feel free to fork the repo, open issues, or submit pull requests! Contributions 
 ---
 
 ## 🔗 **Links**
-- **Live Demo**: [ushort.trkn.online](https://trkn-ushort.onrender.com)
+- **Live Demo**: [trkn-ushort.onrender.com](https://trkn-ushort.onrender.com)
 - **GitHub Repo**: [ushort](https://github.com/tucommenceapousser/ushort)
 
 ---
