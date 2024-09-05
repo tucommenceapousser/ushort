@@ -1,4 +1,4 @@
-# 🏹 Welcome to **Ushort** - The Ultimate URL Shortener! 🔗✨
+m# 🏹 Welcome to **Ushort** - The Ultimate URL Shortener! 🔗✨
 
 ### **Live Demo** 🌍: [ushort.trkn.online](https://trkn-ushort.onrender.com)
 
@@ -77,7 +77,7 @@ Wanna deploy your own version? It’s a breeze! 🌀
 
 Wanna deploy to **Glitch** with just one click? Here you go:
 
-[![Remix on Glitch](https://img.shields.io/badge/Remix%20on-Glitch-green?logo=glitch)](https://glitch.com/edit/#!/remix/your-glitch-template-url)
+[![Remix on Glitch](https://img.shields.io/badge/Remix%20on-Glitch-green?logo=glitch)](https://glitch.com/edit/#!/remix/github.com/tucommenceapousser/ushort)
 
 ---
 
