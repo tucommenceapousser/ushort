@@ -77,7 +77,7 @@ Wanna deploy your own version? It’s a breeze! 🌀
 
 Wanna deploy to **Glitch** with just one click? Here you go:
 
-[![Remix on Glitch](https://img.shields.io/badge/Remix%20on-Glitch-green?logo=glitch)](https://glitch.com/edit/#!/remix/github.com/tucommenceapousser/ushort)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/tucommenceapousser/ushort)
 
 ---
 
